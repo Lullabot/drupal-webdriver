@@ -26,5 +26,12 @@ jobs:
       - name: Configure tests
         run: cp .github/workflows/phpunit.xml core/phpunit.xml
 
-      - name: Run one test
-        run: ddev exec SYMFONY_DEPRECATIONS_HELPER=weak phpunit -c core --verbose --fail-on-incomplete --fail-on-risky --fail-on-skipped core/modules/block/tests/src/FunctionalJavascript/BlockAddTest.php
+      - name: Run tests
+        run: ddev exec SYMFONY_DEPRECATIONS_HELPER=weak phpunit -c core --testsuite=functional-javascript --verbose --fail-on-incomplete --fail-on-risky --fail-on-skipped core
+
+      - name: Upload test artifacts
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v3
+        with:
+          name: browser_output
+          path: sites/simpletest/browser_output
