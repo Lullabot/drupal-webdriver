@@ -1,0 +1,26 @@
+name: Setup Tests
+
+on:
+  workflow_call:
+    inputs:
+      php-version:
+        required: true
+        type: string
+
+jobs:
+  Test-Setup:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: ddev/github-action-setup-ddev@v1
+
+      - name: Install dependencies
+        run: ddev composer install
+
+      - name: Configure tests
+        run: cp .github/workflows/phpunit.xml core/phpunit.xml
+
+      - name: Run one test
+        run: ddev exec phpunit -c core --verbose core/modules/block/tests/src/FunctionalJavascript/BlockAddTest.php
