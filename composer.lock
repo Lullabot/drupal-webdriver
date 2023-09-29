@@ -4352,12 +4352,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Lullabot/MinkSelenium2Driver.git",
-                "reference": "b673676138fbd16915dd5f4b24bfbf931a36314e"
+                "reference": "8307430f2e9d4993704a526a7cd92439ccc310fa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Lullabot/MinkSelenium2Driver/zipball/b673676138fbd16915dd5f4b24bfbf931a36314e",
-                "reference": "b673676138fbd16915dd5f4b24bfbf931a36314e",
+                "url": "https://api.github.com/repos/Lullabot/MinkSelenium2Driver/zipball/8307430f2e9d4993704a526a7cd92439ccc310fa",
+                "reference": "8307430f2e9d4993704a526a7cd92439ccc310fa",
                 "shasum": ""
             },
             "require": {
@@ -4417,7 +4417,7 @@
             "support": {
                 "source": "https://github.com/Lullabot/MinkSelenium2Driver/tree/w3c-compat"
             },
-            "time": "2023-09-21T09:35:20+00:00"
+            "time": "2023-09-29T20:00:05+00:00"
         },
         {
             "name": "chi-teck/drupal-code-generator",
