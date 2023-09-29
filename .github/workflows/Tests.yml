@@ -27,4 +27,4 @@ jobs:
         run: cp .github/workflows/phpunit.xml core/phpunit.xml
 
       - name: Run one test
-        run: ddev exec phpunit -c core --verbose core/modules/block/tests/src/FunctionalJavascript/BlockAddTest.php
+        run: ddev exec SYMFONY_DEPRECATIONS_HELPER=weak phpunit -c core --verbose --fail-on-incomplete --fail-on-risky --fail-on-skipped core/modules/block/tests/src/FunctionalJavascript/BlockAddTest.php
