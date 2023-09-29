@@ -1,14 +1,18 @@
 name: Setup Tests
 
 on:
-  workflow_call:
-    inputs:
-      php-version:
-        required: true
-        type: string
+  push:
+    branches:
+      - main
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.head_ref || github.run_id }}
+  cancel-in-progress: true
 
 jobs:
-  Test-Setup:
+  Tests:
     runs-on: ubuntu-latest
 
     steps:
