@@ -27,7 +27,7 @@ jobs:
         run: cp .github/workflows/phpunit.xml core/phpunit.xml
 
       - name: Run tests
-        run: ddev exec php ./core/scripts/run-tests.sh --color --keep-results --types "PHPUnit-FunctionalJavascript" --concurrency "1" --repeat "1" --sqlite "./sites/default/files/.sqlite" --verbose --non-html --all
+        run: ddev exec php ./core/scripts/run-tests.sh --color --keep-results --types "PHPUnit-FunctionalJavascript" --concurrency "4" --repeat "1" --sqlite "./sites/default/files/.sqlite" --verbose --non-html --all
 
       - name: Upload test artifacts
         if: ${{ always() }}
