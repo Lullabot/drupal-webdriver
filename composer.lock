@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "612f41b4a3a156578d9f489fbcd08e6f",
+    "content-hash": "4f4eea0ff854329eece56f0f22ca732f",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -491,7 +491,7 @@
         },
         {
             "name": "drupal/core",
-            "version": "11.x-dev",
+            "version": "dev-main",
             "dist": {
                 "type": "path",
                 "url": "core",
@@ -648,7 +648,7 @@
         },
         {
             "name": "drupal/core-project-message",
-            "version": "11.x-dev",
+            "version": "dev-main",
             "dist": {
                 "type": "path",
                 "url": "composer/Plugin/ProjectMessage",
@@ -681,7 +681,7 @@
         },
         {
             "name": "drupal/core-vendor-hardening",
-            "version": "11.x-dev",
+            "version": "dev-main",
             "dist": {
                 "type": "path",
                 "url": "composer/Plugin/VendorHardening",
@@ -6347,16 +6347,16 @@
         },
         {
             "name": "lullabot/php-webdriver",
-            "version": "dev-w3c-compat",
+            "version": "dev-main",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Lullabot/php-webdriver.git",
-                "reference": "5fd78b94b8de37e5785f3147362ae398a1901617"
+                "reference": "3014d5849e43bfdeb49931517c1a6599d33cd59f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Lullabot/php-webdriver/zipball/5fd78b94b8de37e5785f3147362ae398a1901617",
-                "reference": "5fd78b94b8de37e5785f3147362ae398a1901617",
+                "url": "https://api.github.com/repos/Lullabot/php-webdriver/zipball/3014d5849e43bfdeb49931517c1a6599d33cd59f",
+                "reference": "3014d5849e43bfdeb49931517c1a6599d33cd59f",
                 "shasum": ""
             },
             "require": {
@@ -6368,6 +6368,7 @@
             "require-dev": {
                 "phpunit/phpunit": "^8.5 || ^9.5"
             },
+            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-0": {
@@ -6387,9 +6388,9 @@
                 "webtest"
             ],
             "support": {
-                "source": "https://github.com/Lullabot/php-webdriver/tree/w3c-compat"
+                "source": "https://github.com/Lullabot/php-webdriver/tree/main"
             },
-            "time": "2023-09-21T09:36:44+00:00"
+            "time": "2023-10-03T10:08:56+00:00"
         },
         {
             "name": "mglaman/phpstan-drupal",
