@@ -4352,12 +4352,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Lullabot/MinkSelenium2Driver.git",
-                "reference": "b84f67bab79f1cf606b3a6550c2bf84b6fb455e2"
+                "reference": "cb196ef320fa7c4d68accf0e5adb37f6dcf0d982"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Lullabot/MinkSelenium2Driver/zipball/b84f67bab79f1cf606b3a6550c2bf84b6fb455e2",
-                "reference": "b84f67bab79f1cf606b3a6550c2bf84b6fb455e2",
+                "url": "https://api.github.com/repos/Lullabot/MinkSelenium2Driver/zipball/cb196ef320fa7c4d68accf0e5adb37f6dcf0d982",
+                "reference": "cb196ef320fa7c4d68accf0e5adb37f6dcf0d982",
                 "shasum": ""
             },
             "require": {
@@ -4417,7 +4417,7 @@
             "support": {
                 "source": "https://github.com/Lullabot/MinkSelenium2Driver/tree/w3c-compat"
             },
-            "time": "2023-10-02T15:11:03+00:00"
+            "time": "2023-10-03T12:07:03+00:00"
         },
         {
             "name": "colinodell/psr-testlogger",
